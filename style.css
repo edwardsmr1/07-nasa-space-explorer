@@ -142,3 +142,52 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  width: min(900px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-title,
+.modal-date,
+.modal-description {
+  margin-top: 12px;
+}
+
+.loading-message,
+.error-msg {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
